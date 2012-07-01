@@ -43,23 +43,11 @@
     solution:
     ternary operator rule, precedence stuff, symbol rule.
     but also consider 'a.b?(:c)' ??
-</string>
+	</string>
 	<key>fileTypes</key>
 	<array>
-		<string>rb</string>
-		<string>rbx</string>
-		<string>rjs</string>
-		<string>Rakefile</string>
-		<string>rake</string>
-		<string>cgi</string>
-		<string>fcgi</string>
-		<string>gemspec</string>
-		<string>irbrc</string>
-		<string>capfile</string>
-		<string>Gemfile</string>
+		<string>mirah</string>
 	</array>
-	<key>firstLineMatch</key>
-	<string>^#!/.*\bruby</string>
 	<key>foldingStartMarker</key>
 	<string>(?x)^
 	    (\s*+
@@ -96,12 +84,94 @@
 		|   [#] .*? \(end\) \s*+ $    # Sune’s special marker
 		|   ^=end
 		)</string>
-	<key>keyEquivalent</key>
-	<string>^~R</string>
 	<key>name</key>
-	<string>Ruby</string>
+	<string>Mirah</string>
 	<key>patterns</key>
 	<array>
+
+		<dict>
+			<key>match</key>
+			<string>\b(puts)\b</string>
+			<key>name</key>
+			<string>variable.predefined.method.mirah</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.import.mirah</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.package.source.mirah</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(import)\b(?:\s*([^ ;$]+)\s*)?</string>
+			<key>name</key>
+			<string>meta.import.mirah</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.interface.mirah</string>
+			<key>match</key>
+			<string>^\s*(interface)\s+([A-Z]\w*)\b</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.interface.mirah</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.interface.mirah</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.implements.interface.mirah</string>
+			<key>match</key>
+			<string>^\s*(implements)\s+([A-Z]\w*)(?:\s*,\s*([A-Z]\w*))*</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.implements.mirah</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.interface.mirah</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.interface.mirah</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.type.signature.mirah</string>
+			<key>match</key>
+			<string>:\s*(\w+(?:\[\])?)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.mirah</string>
+				</dict>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -254,32 +324,9 @@
 			<key>comment</key>
 			<string> everything being a method but having a special function is a..</string>
 			<key>match</key>
-			<string>\b(initialize|new|loop|include|extend|raise|attr_reader|attr_writer|attr_accessor|attr|catch|throw|private|module_function|public|protected)\b(?![?!])</string>
+			<string>\b(initialize|new|raise|catch|throw|private|public|protected|macro|quote)\b(?![?!])</string>
 			<key>name</key>
 			<string>keyword.other.special-method.mirah</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>\b(require|gem)\b</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.special-method.mirah</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>$|(?=#)</string>
-			<key>name</key>
-			<string>meta.require.mirah</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -400,10 +447,6 @@
 					<string>punctuation.definition.parameters.mirah</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>the method pattern comes from the symbol pattern, see there for a explaination</string>
-			<key>contentName</key>
-			<string>variable.parameter.function.mirah</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>endCaptures</key>
@@ -420,7 +463,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
+					<string>#parameters</string>
 				</dict>
 			</array>
 		</dict>
@@ -497,58 +540,6 @@
 			<string>\b(0[xX]\h(?&gt;_?\h)*|\d(?&gt;_?\d)*(\.(?![^[:space:][:digit:]])(?&gt;_?\d)*)?([eE][-+]?\d(?&gt;_?\d)*)?|0[bB][01]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.mirah</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>:'</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.mirah</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>'</string>
-			<key>name</key>
-			<string>constant.other.symbol.single-quoted.mirah</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\\['\\]</string>
-					<key>name</key>
-					<string>constant.character.escape.mirah</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>:"</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.mirah</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>constant.other.symbol.double-quoted.mirah</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#interpolated_ruby</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#escaped_char</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -1543,38 +1534,6 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.mirah</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>symbols</string>
-			<key>match</key>
-			<string>(?&lt;!:)(:)(?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?![&gt;=]))?|===?|&gt;[&gt;=]?|&lt;[&lt;=]?|&lt;=&gt;|[%&amp;`/\|]|\*\*?|=?~|[-+]@?|\[\]=?|@@?[a-zA-Z_]\w*)</string>
-			<key>name</key>
-			<string>constant.other.symbol.mirah</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.mirah</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>symbols</string>
-			<key>match</key>
-			<string>(?&gt;[a-zA-Z_]\w*(?&gt;[?!])?)(:)(?!:)</string>
-			<key>name</key>
-			<string>constant.other.symbol.mirah.19syntax</string>
-		</dict>
-		<dict>
 			<key>begin</key>
 			<string>^=begin</string>
 			<key>captures</key>
@@ -2061,7 +2020,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>heredoc with embedded mirah and intented terminator</string>
+			<string>heredoc with embedded ruby and intented terminator</string>
 			<key>contentName</key>
 			<string>text.mirah.embedded.mirah</string>
 			<key>end</key>
@@ -2292,6 +2251,30 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>parameters</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(\w+)(?::\s*(\w+))?</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.mirah</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.mirah</string>
+						</dict>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+
 		<key>escaped_char</key>
 		<dict>
 			<key>match</key>
@@ -2848,7 +2831,5 @@
 	</dict>
 	<key>scopeName</key>
 	<string>source.mirah</string>
-	<key>uuid</key>
-	<string>E00B62AC-6B1C-11D9-9B1F-000D93589AF6</string>
 </dict>
 </plist>
