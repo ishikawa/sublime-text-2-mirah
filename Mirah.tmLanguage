@@ -108,38 +108,38 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.class.ruby</string>
+					<string>keyword.control.class.mirah</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.class.ruby</string>
+					<string>entity.name.type.class.mirah</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.inherited-class.ruby</string>
+					<string>entity.other.inherited-class.mirah</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.inheritance.ruby</string>
+					<string>punctuation.separator.inheritance.mirah</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>variable.other.object.ruby</string>
+					<string>variable.other.object.mirah</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.variable.ruby</string>
+					<string>punctuation.definition.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>^\s*(class)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
 			<key>name</key>
-			<string>meta.class.ruby</string>
+			<string>meta.class.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -147,48 +147,48 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.module.ruby</string>
+					<string>keyword.control.module.mirah</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.module.ruby</string>
+					<string>entity.name.type.module.mirah</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.inherited-class.module.first.ruby</string>
+					<string>entity.other.inherited-class.module.first.mirah</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.inheritance.ruby</string>
+					<string>punctuation.separator.inheritance.mirah</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.inherited-class.module.second.ruby</string>
+					<string>entity.other.inherited-class.module.second.mirah</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.inheritance.ruby</string>
+					<string>punctuation.separator.inheritance.mirah</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.inherited-class.module.third.ruby</string>
+					<string>entity.other.inherited-class.module.third.mirah</string>
 				</dict>
 				<key>8</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.inheritance.ruby</string>
+					<string>punctuation.separator.inheritance.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>^\s*(module)\s+(([A-Z]\w*(::))?([A-Z]\w*(::))?([A-Z]\w*(::))*[A-Z]\w*)</string>
 			<key>name</key>
-			<string>meta.module.ruby</string>
+			<string>meta.module.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -196,7 +196,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\belse(\s)+if\b</string>
 			<key>name</key>
-			<string>invalid.deprecated.ruby</string>
+			<string>invalid.deprecated.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -204,7 +204,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(BEGIN|begin|case|class|else|elsif|END|end|ensure|for|if|in|module|rescue|then|unless|until|when|while)\b(?![?!])</string>
 			<key>name</key>
-			<string>keyword.control.ruby</string>
+			<string>keyword.control.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -212,7 +212,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\bdo\b\s*</string>
 			<key>name</key>
-			<string>keyword.control.start-block.ruby</string>
+			<string>keyword.control.start-block.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -220,7 +220,7 @@
 			<key>match</key>
 			<string>(?&lt;=\{)(\s+)</string>
 			<key>name</key>
-			<string>meta.syntax.ruby.start-block</string>
+			<string>meta.syntax.mirah.start-block</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -228,7 +228,7 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(and|not|or)\b</string>
 			<key>name</key>
-			<string>keyword.operator.logical.ruby</string>
+			<string>keyword.operator.logical.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -236,19 +236,19 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b(alias|alias_method|break|next|redo|retry|return|super|undef|yield)\b(?![?!])|\bdefined\?|\bblock_given\?</string>
 			<key>name</key>
-			<string>keyword.control.pseudo-method.ruby</string>
+			<string>keyword.control.pseudo-method.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(nil|true|false)\b(?![?!])</string>
 			<key>name</key>
-			<string>constant.language.ruby</string>
+			<string>constant.language.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(__(FILE|LINE)__|self)\b(?![?!])</string>
 			<key>name</key>
-			<string>variable.language.ruby</string>
+			<string>variable.language.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -256,7 +256,7 @@
 			<key>match</key>
 			<string>\b(initialize|new|loop|include|extend|raise|attr_reader|attr_writer|attr_accessor|attr|catch|throw|private|module_function|public|protected)\b(?![?!])</string>
 			<key>name</key>
-			<string>keyword.other.special-method.ruby</string>
+			<string>keyword.other.special-method.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -266,13 +266,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.special-method.ruby</string>
+					<string>keyword.other.special-method.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>$|(?=#)</string>
 			<key>name</key>
-			<string>meta.require.ruby</string>
+			<string>meta.require.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -287,13 +287,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.variable.ruby</string>
+					<string>punctuation.definition.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(@)[a-zA-Z_]\w*</string>
 			<key>name</key>
-			<string>variable.other.readwrite.instance.ruby</string>
+			<string>variable.other.readwrite.instance.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -301,13 +301,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.variable.ruby</string>
+					<string>punctuation.definition.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(@@)[a-zA-Z_]\w*</string>
 			<key>name</key>
-			<string>variable.other.readwrite.class.ruby</string>
+			<string>variable.other.readwrite.class.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -315,13 +315,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.variable.ruby</string>
+					<string>punctuation.definition.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\$)[a-zA-Z_]\w*</string>
 			<key>name</key>
-			<string>variable.other.readwrite.global.ruby</string>
+			<string>variable.other.readwrite.global.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -329,13 +329,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.variable.ruby</string>
+					<string>punctuation.definition.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\$)(!|@|&amp;|`|'|\+|\d+|~|=|/|\\|,|;|\.|&lt;|&gt;|_|\*|\$|\?|:|"|-[0adFiIlpv])</string>
 			<key>name</key>
-			<string>variable.other.readwrite.global.pre-defined.ruby</string>
+			<string>variable.other.readwrite.global.pre-defined.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -345,13 +345,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.other.constant.ruby</string>
+					<string>variable.other.constant.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\]</string>
 			<key>name</key>
-			<string>meta.environment-variable.ruby</string>
+			<string>meta.environment-variable.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -364,13 +364,13 @@
 			<key>match</key>
 			<string>\b[A-Z]\w*(?=((\.|::)[A-Za-z]|\[))</string>
 			<key>name</key>
-			<string>support.class.ruby</string>
+			<string>support.class.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b[A-Z]\w*\b</string>
 			<key>name</key>
-			<string>variable.other.constant.ruby</string>
+			<string>variable.other.constant.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -387,23 +387,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.def.ruby</string>
+					<string>keyword.control.def.mirah</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.ruby</string>
+					<string>entity.name.function.mirah</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.ruby</string>
+					<string>punctuation.definition.parameters.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>the method pattern comes from the symbol pattern, see there for a explaination</string>
 			<key>contentName</key>
-			<string>variable.parameter.function.ruby</string>
+			<string>variable.parameter.function.mirah</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>endCaptures</key>
@@ -411,11 +411,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.ruby</string>
+					<string>punctuation.definition.parameters.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.method.with-arguments.ruby</string>
+			<string>meta.function.method.with-arguments.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -440,22 +440,22 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.def.ruby</string>
+					<string>keyword.control.def.mirah</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.ruby</string>
+					<string>entity.name.function.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>same as the previous rule, but without parentheses around the arguments</string>
 			<key>contentName</key>
-			<string>variable.parameter.function.ruby</string>
+			<string>variable.parameter.function.mirah</string>
 			<key>end</key>
 			<string>$</string>
 			<key>name</key>
-			<string>meta.function.method.with-arguments.ruby</string>
+			<string>meta.function.method.with-arguments.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -470,12 +470,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.def.ruby</string>
+					<string>keyword.control.def.mirah</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.ruby</string>
+					<string>entity.name.function.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -490,13 +490,13 @@
 			             |===?|&gt;[&gt;=]?|&lt;=&gt;|&lt;[&lt;=]?|[%&amp;`/\|]|\*\*?|=?~|[-+]@?|\[\]=?) ) )?  # …or an operator method
 			        </string>
 			<key>name</key>
-			<string>meta.function.method.without-arguments.ruby</string>
+			<string>meta.function.method.without-arguments.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(0[xX]\h(?&gt;_?\h)*|\d(?&gt;_?\d)*(\.(?![^[:space:][:digit:]])(?&gt;_?\d)*)?([eE][-+]?\d(?&gt;_?\d)*)?|0[bB][01]+)\b</string>
 			<key>name</key>
-			<string>constant.numeric.ruby</string>
+			<string>constant.numeric.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -506,20 +506,20 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
+					<string>punctuation.definition.constant.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>'</string>
 			<key>name</key>
-			<string>constant.other.symbol.single-quoted.ruby</string>
+			<string>constant.other.symbol.single-quoted.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\['\\]</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 			</array>
 		</dict>
@@ -531,13 +531,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
+					<string>punctuation.definition.constant.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>constant.other.symbol.double-quoted.ruby</string>
+			<string>constant.other.symbol.double-quoted.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -556,7 +556,7 @@
 			<key>match</key>
 			<string>/=</string>
 			<key>name</key>
-			<string>keyword.operator.assignment.augmented.ruby</string>
+			<string>keyword.operator.assignment.augmented.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -566,7 +566,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -578,18 +578,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.single.ruby</string>
+			<string>string.quoted.single.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\'|\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 			</array>
 		</dict>
@@ -601,7 +601,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -613,11 +613,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.ruby</string>
+			<string>string.quoted.double.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -638,7 +638,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -650,11 +650,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -675,7 +675,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -687,11 +687,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -716,7 +716,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -728,11 +728,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -757,7 +757,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -769,11 +769,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -798,7 +798,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -810,11 +810,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -839,7 +839,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -851,11 +851,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated.ruby</string>
+			<string>string.interpolated.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -907,12 +907,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>string.regexp.classic.ruby</string>
+					<string>string.regexp.classic.mirah</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.ruby</string>
+					<string>punctuation.definition.string.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -921,7 +921,7 @@
 			is what we think is before a regexp
 			</string>
 			<key>contentName</key>
-			<string>string.regexp.classic.ruby</string>
+			<string>string.regexp.classic.mirah</string>
 			<key>end</key>
 			<string>((/[eimnosux]*))</string>
 			<key>patterns</key>
@@ -940,7 +940,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -952,11 +952,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.regexp.mod-r.ruby</string>
+			<string>string.regexp.mod-r.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -977,7 +977,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -989,11 +989,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.regexp.mod-r.ruby</string>
+			<string>string.regexp.mod-r.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1014,7 +1014,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1026,11 +1026,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.regexp.mod-r.ruby</string>
+			<string>string.regexp.mod-r.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1051,7 +1051,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1063,11 +1063,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.regexp.mod-r.ruby</string>
+			<string>string.regexp.mod-r.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1088,7 +1088,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1100,11 +1100,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.regexp.mod-r.ruby</string>
+			<string>string.regexp.mod-r.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1121,7 +1121,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1133,11 +1133,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.upper.ruby</string>
+			<string>string.quoted.other.literal.upper.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1162,7 +1162,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1174,11 +1174,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.upper.ruby</string>
+			<string>string.quoted.other.literal.upper.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1203,7 +1203,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1215,11 +1215,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.upper.ruby</string>
+			<string>string.quoted.other.literal.upper.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1244,7 +1244,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1256,11 +1256,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.ruby.mod</string>
+			<string>string.quoted.double.mirah.mod</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1285,7 +1285,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1297,11 +1297,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.upper.ruby</string>
+			<string>string.quoted.other.literal.upper.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1322,7 +1322,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1334,11 +1334,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.other.ruby</string>
+			<string>string.quoted.other.literal.other.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1359,7 +1359,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1371,18 +1371,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.lower.ruby</string>
+			<string>string.quoted.other.literal.lower.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\\)|\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1398,7 +1398,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1410,18 +1410,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.lower.ruby</string>
+			<string>string.quoted.other.literal.lower.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\\&gt;|\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1437,7 +1437,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1449,18 +1449,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.lower.ruby</string>
+			<string>string.quoted.other.literal.lower.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\\]|\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1476,7 +1476,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1488,18 +1488,18 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.lower.ruby</string>
+			<string>string.quoted.other.literal.lower.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>\\\}|\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.ruby</string>
+					<string>constant.character.escape.mirah</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1515,7 +1515,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1527,11 +1527,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.other.literal.lower.ruby</string>
+			<string>string.quoted.other.literal.lower.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1548,7 +1548,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
+					<string>punctuation.definition.constant.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1556,7 +1556,7 @@
 			<key>match</key>
 			<string>(?&lt;!:)(:)(?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?![&gt;=]))?|===?|&gt;[&gt;=]?|&lt;[&lt;=]?|&lt;=&gt;|[%&amp;`/\|]|\*\*?|=?~|[-+]@?|\[\]=?|@@?[a-zA-Z_]\w*)</string>
 			<key>name</key>
-			<string>constant.other.symbol.ruby</string>
+			<string>constant.other.symbol.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -1564,7 +1564,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
+					<string>punctuation.definition.constant.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1572,7 +1572,7 @@
 			<key>match</key>
 			<string>(?&gt;[a-zA-Z_]\w*(?&gt;[?!])?)(:)(?!:)</string>
 			<key>name</key>
-			<string>constant.other.symbol.ruby.19syntax</string>
+			<string>constant.other.symbol.mirah.19syntax</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -1582,7 +1582,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.ruby</string>
+					<string>punctuation.definition.comment.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1590,7 +1590,7 @@
 			<key>end</key>
 			<string>^=end</string>
 			<key>name</key>
-			<string>comment.block.documentation.ruby</string>
+			<string>comment.block.documentation.mirah</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -1598,13 +1598,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.ruby</string>
+					<string>punctuation.definition.comment.mirah</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(?:^[ \t]+)?(#).*$\n?</string>
 			<key>name</key>
-			<string>comment.line.number-sign.ruby</string>
+			<string>comment.line.number-sign.mirah</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -1635,7 +1635,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)\?(\\(x\h{1,2}(?!\h)\b|0[0-7]{0,2}(?![0-7])\b|[^x0MC])|(\\[MC]-)+\w|[^\s\\])</string>
 			<key>name</key>
-			<string>constant.numeric.ruby</string>
+			<string>constant.numeric.mirah</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -1645,7 +1645,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>string.unquoted.program-block.ruby</string>
+					<string>string.unquoted.program-block.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -1662,7 +1662,7 @@
 					<key>end</key>
 					<string>(?=not)impossible</string>
 					<key>name</key>
-					<string>text.html.embedded.ruby</string>
+					<string>text.html.embedded.mirah</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1681,13 +1681,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded HTML and indented terminator</string>
 			<key>contentName</key>
-			<string>text.html.embedded.ruby</string>
+			<string>text.html.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1695,11 +1695,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.html.ruby</string>
+			<string>string.unquoted.embedded.html.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1728,13 +1728,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded SQL and indented terminator</string>
 			<key>contentName</key>
-			<string>text.sql.embedded.ruby</string>
+			<string>text.sql.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1742,11 +1742,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.sql.ruby</string>
+			<string>string.unquoted.embedded.sql.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1775,13 +1775,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded css and intented terminator</string>
 			<key>contentName</key>
-			<string>text.css.embedded.ruby</string>
+			<string>text.css.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1789,11 +1789,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.css.ruby</string>
+			<string>string.unquoted.embedded.css.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1822,13 +1822,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded c++ and intented terminator</string>
 			<key>contentName</key>
-			<string>text.c++.embedded.ruby</string>
+			<string>text.c++.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1836,11 +1836,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.cplusplus.ruby</string>
+			<string>string.unquoted.embedded.cplusplus.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1869,13 +1869,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded c++ and intented terminator</string>
 			<key>contentName</key>
-			<string>text.c.embedded.ruby</string>
+			<string>text.c.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1883,11 +1883,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.c.ruby</string>
+			<string>string.unquoted.embedded.c.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1916,13 +1916,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded javascript and intented terminator</string>
 			<key>contentName</key>
-			<string>text.js.embedded.ruby</string>
+			<string>text.js.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1930,11 +1930,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.js.ruby</string>
+			<string>string.unquoted.embedded.js.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1963,13 +1963,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded javascript and intented terminator</string>
 			<key>contentName</key>
-			<string>text.js.jquery.embedded.ruby</string>
+			<string>text.js.jquery.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -1977,11 +1977,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.js.jquery.ruby</string>
+			<string>string.unquoted.embedded.js.jquery.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2010,13 +2010,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>heredoc with embedded shell and intented terminator</string>
 			<key>contentName</key>
-			<string>text.shell.embedded.ruby</string>
+			<string>text.shell.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -2024,11 +2024,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.shell.ruby</string>
+			<string>string.unquoted.embedded.shell.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2057,13 +2057,13 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>heredoc with embedded ruby and intented terminator</string>
+			<string>heredoc with embedded mirah and intented terminator</string>
 			<key>contentName</key>
-			<string>text.ruby.embedded.ruby</string>
+			<string>text.mirah.embedded.mirah</string>
 			<key>end</key>
 			<string>\s*\2$</string>
 			<key>endCaptures</key>
@@ -2071,11 +2071,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.embedded.ruby.ruby</string>
+			<string>string.unquoted.embedded.mirah.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2084,7 +2084,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.ruby</string>
+					<string>source.mirah</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -2104,7 +2104,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2114,11 +2114,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.heredoc.ruby</string>
+			<string>string.unquoted.heredoc.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2143,7 +2143,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.ruby</string>
+					<string>punctuation.definition.string.begin.mirah</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -2155,11 +2155,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.ruby</string>
+					<string>punctuation.definition.string.end.mirah</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.unquoted.heredoc.ruby</string>
+			<string>string.unquoted.heredoc.mirah</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2184,7 +2184,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.variable.ruby</string>
+					<string>punctuation.separator.variable.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2195,13 +2195,13 @@
 					<key>match</key>
 					<string>[_a-zA-Z][_a-zA-Z0-9]*</string>
 					<key>name</key>
-					<string>variable.other.block.ruby</string>
+					<string>variable.other.block.mirah</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>,</string>
 					<key>name</key>
-					<string>punctuation.separator.variable.ruby</string>
+					<string>punctuation.separator.variable.mirah</string>
 				</dict>
 			</array>
 		</dict>
@@ -2215,79 +2215,79 @@
 			<key>match</key>
 			<string>&lt;&lt;=|%=|&amp;=|\*=|\*\*=|\+=|\-=|\^=|\|{1,2}=|&lt;&lt;</string>
 			<key>name</key>
-			<string>keyword.operator.assignment.augmented.ruby</string>
+			<string>keyword.operator.assignment.augmented.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>&lt;=&gt;|&lt;(?!&lt;|=)|&gt;(?!&lt;|=|&gt;)|&lt;=|&gt;=|===|==|=~|!=|!~|(?&lt;=[ \t])\?</string>
 			<key>name</key>
-			<string>keyword.operator.comparison.ruby</string>
+			<string>keyword.operator.comparison.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=[ \t])!+|\bnot\b|&amp;&amp;|\band\b|\|\||\bor\b|\^</string>
 			<key>name</key>
-			<string>keyword.operator.logical.ruby</string>
+			<string>keyword.operator.logical.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(%|&amp;|\*\*|\*|\+|\-|/)</string>
 			<key>name</key>
-			<string>keyword.operator.arithmetic.ruby</string>
+			<string>keyword.operator.arithmetic.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>=</string>
 			<key>name</key>
-			<string>keyword.operator.assignment.ruby</string>
+			<string>keyword.operator.assignment.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\||~|&gt;&gt;</string>
 			<key>name</key>
-			<string>keyword.operator.other.ruby</string>
+			<string>keyword.operator.other.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>:</string>
 			<key>name</key>
-			<string>punctuation.separator.other.ruby</string>
+			<string>punctuation.separator.other.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\;</string>
 			<key>name</key>
-			<string>punctuation.separator.statement.ruby</string>
+			<string>punctuation.separator.statement.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>,</string>
 			<key>name</key>
-			<string>punctuation.separator.object.ruby</string>
+			<string>punctuation.separator.object.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\.|::</string>
 			<key>name</key>
-			<string>punctuation.separator.method.ruby</string>
+			<string>punctuation.separator.method.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\{|\}</string>
 			<key>name</key>
-			<string>punctuation.section.scope.ruby</string>
+			<string>punctuation.section.scope.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\[|\]</string>
 			<key>name</key>
-			<string>punctuation.section.array.ruby</string>
+			<string>punctuation.section.array.mirah</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\(|\)</string>
 			<key>name</key>
-			<string>punctuation.section.function.ruby</string>
+			<string>punctuation.section.function.mirah</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -2297,7 +2297,7 @@
 			<key>match</key>
 			<string>\\(?:[0-7]{1,3}|x[\da-fA-F]{1,2}|.)</string>
 			<key>name</key>
-			<string>constant.character.escape.ruby</string>
+			<string>constant.character.escape.mirah</string>
 		</dict>
 		<key>heredoc</key>
 		<dict>
@@ -2323,18 +2323,18 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.ruby</string>
+							<string>punctuation.section.embedded.mirah</string>
 						</dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>source.ruby.embedded.source.empty</string>
+							<string>source.mirah.embedded.source.empty</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>#\{(\})</string>
 					<key>name</key>
-					<string>source.ruby.embedded.source</string>
+					<string>source.mirah.embedded.source</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -2344,13 +2344,13 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.ruby</string>
+							<string>punctuation.section.embedded.mirah</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\}</string>
 					<key>name</key>
-					<string>source.ruby.embedded.source</string>
+					<string>source.mirah.embedded.source</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -2369,13 +2369,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.variable.ruby</string>
+							<string>punctuation.definition.variable.mirah</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(#@)[a-zA-Z_]\w*</string>
 					<key>name</key>
-					<string>variable.other.readwrite.instance.ruby</string>
+					<string>variable.other.readwrite.instance.mirah</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -2383,13 +2383,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.variable.ruby</string>
+							<string>punctuation.definition.variable.mirah</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(#@@)[a-zA-Z_]\w*</string>
 					<key>name</key>
-					<string>variable.other.readwrite.class.ruby</string>
+					<string>variable.other.readwrite.class.mirah</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -2397,13 +2397,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.variable.ruby</string>
+							<string>punctuation.definition.variable.mirah</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(#\$)[a-zA-Z_]\w*</string>
 					<key>name</key>
-					<string>variable.other.readwrite.global.ruby</string>
+					<string>variable.other.readwrite.global.mirah</string>
 				</dict>
 			</array>
 		</dict>
@@ -2416,7 +2416,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2438,7 +2438,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2468,7 +2468,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2494,7 +2494,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2519,7 +2519,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.scope.ruby</string>
+							<string>punctuation.section.scope.mirah</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -2547,7 +2547,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2577,7 +2577,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2603,7 +2603,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2625,7 +2625,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2655,7 +2655,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2681,7 +2681,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2703,7 +2703,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2733,7 +2733,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.scope.ruby</string>
+					<string>punctuation.section.scope.mirah</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -2768,18 +2768,18 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.arbitrary-repitition.ruby</string>
+							<string>punctuation.definition.arbitrary-repitition.mirah</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.arbitrary-repitition.ruby</string>
+							<string>punctuation.definition.arbitrary-repitition.mirah</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(\{)\d+(,\d+)?(\})</string>
 					<key>name</key>
-					<string>string.regexp.arbitrary-repitition.ruby</string>
+					<string>string.regexp.arbitrary-repitition.mirah</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -2789,13 +2789,13 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.character-class.ruby</string>
+							<string>punctuation.definition.character-class.mirah</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\]</string>
 					<key>name</key>
-					<string>string.regexp.character-class.ruby</string>
+					<string>string.regexp.character-class.mirah</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -2812,13 +2812,13 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.group.ruby</string>
+							<string>punctuation.definition.group.mirah</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\)</string>
 					<key>name</key>
-					<string>string.regexp.group.ruby</string>
+					<string>string.regexp.group.mirah</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -2833,7 +2833,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.ruby</string>
+							<string>punctuation.definition.comment.mirah</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -2841,13 +2841,13 @@
 					<key>match</key>
 					<string>(?&lt;=^|\s)(#)\s[[a-zA-Z0-9,. \t?!-][^\x{00}-\x{7F}]]*$</string>
 					<key>name</key>
-					<string>comment.line.number-sign.ruby</string>
+					<string>comment.line.number-sign.mirah</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.ruby</string>
+	<string>source.mirah</string>
 	<key>uuid</key>
 	<string>E00B62AC-6B1C-11D9-9B1F-000D93589AF6</string>
 </dict>
